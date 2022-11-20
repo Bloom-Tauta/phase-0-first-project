@@ -1,3 +1,40 @@
 body {
-    background: blue;
+    background: white;
 }
+h1{
+    color: rgb(36, 48, 156);
+    justify-content: right;
+}
+h2 {
+    color: burlywood;
+}
+#navabar {
+    
+    display: flex;
+    align-items: center;
+   
+}
+#navbar a {
+    text-decoration: none;
+    font-size: 23px;
+    justify-content: space-between;
+    color: rgb(201, 101, 62);
+}
+#navabar ul {
+       list-style-type: none;
+
+}
+#navbar a:hover {
+    color: rgb(3, 0, 0);
+    
+} 
+#navbar li {
+    padding: 30px;
+    display: inline; 
+ 
+}
+.landing-page {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+} 
