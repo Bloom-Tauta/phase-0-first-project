@@ -1,70 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css" />
-        <title>My Website</title>
-        <style>
-            img{
-                width: 700px;
-                border-radius: 10px;
-                float: right;
-                margin-left: 10px;
-            }
-        </style>
-       
-    </head>/
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>My Website</title>
+	</head>
 
-    <body>
-        <div id="navbar">
-            <h1>Bloom's Website<h1>
-            <script src="script.js"></script> 
+	<body>
+		<header id="navbar">
+			<h1>Bloom's Website</h1>
+			<nav>
+				<ul class="links">
+					<li class="link">
+						<a href="/">Home</a>
+					</li>
+					<li class="link">
+						<a href="#about">About</a>
+					</li>
+					<li class="link">
+						<a href="#contact">Contact</a>
+					</li>
+					<li class="link">
+						<a href="#profile">Profile</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
 
-            
-        
-            
-                <ul>
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <a href="">About</a>
-                    </li>
-                    <li>
-                        <a href="">Contact</a>
-                    </li>
-                    <li>
-                        <a href="">Profile</a>
-                    </li>
-                </ul>   
-            
-               
-        </div>
-        
-        <div>
-            <div class="landing page">
-                <div class="left">
-                    <img src="./image/New-Website-Featured-Image.jpg" />
-                </div>
+		<main>
+			<section id="home">
+				<div class="right">
+					<!-- <h2>Home</h2> -->
+					<h3>Welcome To My Website</h3>
+					<p>This is a deployed page of my website.</p>
+				</div>
+				<div>
+					<div class="landing page">
+						<div class="left">
+							<img
+								class="img"
+								src="./image/New-Website-Featured-Image.jpg"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="about">
+				<h2>About</h2>
+				<div class="tech-languages">
+					<p>
+						I am an aspiring Software Engineer currenlt learning a
+						fullstack course.
+					</p>
+					<p>The languages I have learnt so far are:</p>
+					<ul class="languages">
+						<li>HTML5</li>
+						<li>CSS3</li>
+						<li>Javascript</li>
+					</ul>
+				</div>
+				<div class="skills">
+					<p>
+						I have also been able to learn some other Tech-related
+						skills like:
+					</p>
+					<ul class="skills-list">
+						<li>Git</li>
+						<li>Github</li>
+						<li>Linux</li>
+					</ul>
+				</div>
+			</section>
+			<section id="contact">
+				<h2 class="contact-title">Contact Me</h2>
+				<form class="contact-form">
+					<div class="inputs">
+						<label for="name">Name:</label>
+						<input
+							type="text"
+							id="name"
+							name=""
+							placeholder="Enter name..."
+						/>
+						<label for="email">Email:</label>
+						<input
+							type="email"
+							id="email"
+							name=""
+							placeholder="Enter email..."
+						/>
+					</div>
+					<label for="inputarea">Comments:</label>
+					<textarea
+						id="inputarea"
+						name=""
+						placeholder="Enter comments..."
+					></textarea>
+				</form>
+			</section>
+			<section id="profile">
+				<h2>Profile</h2>
+				<div class="profile-details">
+					<div class="profile-contents">
+						<img src="" alt="" class="profile-img">
+					</div>
+					<h4 class="occupation">Software <span class="profile-text">Engineer</span></h4>
+				</div>
+			</section>
+		</main>
 
-            </div>
-        </div>
-
-        <div class="right">
-            <h3>Welcome To My Website</h3>
-            <p>This is a deployed page of my website.</p>
-        </div>
-
-        <div class="footer">
-            <div>
-                <h4>Bloom Inc</h4>
-                <p>website.com</p>
-                <p>@Copyright 2022</p>
-            </div>
-
-
-        </div>
-        
-        
-        
-    </body>
+		<footer class="footer">
+			<h4>Bloom Inc</h4>
+			<p>website.com</p>
+			<p><span class="copyright">&copy;</span> Copyright 2022</p>
+		</footer>
+		<script src="script.js"></script>
+	</body>
 </html>
